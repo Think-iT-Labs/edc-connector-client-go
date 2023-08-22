@@ -48,3 +48,30 @@ Follow [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) st
 ## New features & bug fixes
 
 Within this project, we follow a _Test-Driven Development_ (TDD) approach.
+
+## Unit Tests
+- To run the unit tests of the project, run the following command:
+```bash
+go test ./...
+```
+- To run unit tests on a specific service, run the following command:
+```bash
+make test WHAT=path/to/folder
+```
+
+## User Acceptance Tests (UATs)
+### Requisites
+Before running UATs, you need to:
+- Install Docker in your machine.
+- Run EDC provider and consumer connectors, by running the following command:
+```bash
+docker-compose -f connector/docker-compose.yml up
+```
+> *Note: Ports needed by Docker containers should be available on your host machine* 
+
+### Run UATs
+- You can find User Acceptance Tests in the folder `examples`
+- Run UATs of a specific service by running the following command:
+```bash
+go run ./examples/assetsCrud/...
+```
