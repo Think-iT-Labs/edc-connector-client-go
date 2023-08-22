@@ -40,6 +40,9 @@ connectors with capabilities described in the
 Please, adhere to the [CONTRIBUTING](CONTRIBUTING.md) guidelines when suggesting
 changes in this repository.
 
+## Disclaimer
+**Please Note:** This project is currently not actively maintained. While the existing codebase is provided as-is, it may not receive updates, bug fixes, or support in the foreseeable future. Feel free to use, modify, and distribute the code according to the project's license, but please be aware that there might be unresolved issues or compatibility concerns with newer software dependencies.
+
 ## License
 
 Copyright 2022-2023 Think.iT GmbH.
