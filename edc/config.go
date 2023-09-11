@@ -3,7 +3,7 @@ package edc
 import (
 	"log"
 
-	edchttp "github.com/Think-iT-Labs/edc-connector-client/go/edc/transport/http"
+	edchttp "github.com/Think-iT-Labs/edc-connector-client-go/edc/transport/http"
 )
 
 type Config struct {

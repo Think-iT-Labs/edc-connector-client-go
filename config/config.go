@@ -6,9 +6,9 @@ import (
 	"os"
 	"reflect"
 
-	"github.com/Think-iT-Labs/edc-connector-client/go/edc"
-	edchttp "github.com/Think-iT-Labs/edc-connector-client/go/edc/transport/http"
-	"github.com/Think-iT-Labs/edc-connector-client/go/internal/sdkuri"
+	"github.com/Think-iT-Labs/edc-connector-client-go/edc"
+	edchttp "github.com/Think-iT-Labs/edc-connector-client-go/edc/transport/http"
+	"github.com/Think-iT-Labs/edc-connector-client-go/internal/sdkuri"
 )
 
 const (

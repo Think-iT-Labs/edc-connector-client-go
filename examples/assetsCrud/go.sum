@@ -1,0 +1,3 @@
+github.com/Think-iT-Labs/edc-connector-client/go v0.0.0-20230515233513-0a4421864d4c h1:lPA5zYRuKdOk3hAV9PkRS/6+6A6uv8ImnHvvrDYnsjc=
+github.com/Think-iT-Labs/edc-connector-client/go/config v0.0.0-20230516101553-dc9c754362f4 h1:wIja5//fyR3Im1wwQfaioIA0vWqC3uoZSdMMFoHN0OQ=
+github.com/Think-iT-Labs/edc-connector-client/go/edc v0.0.0-20230412150151-8c34129e8dc5 h1:PnTyL4jvff+SBomkZZ+HnxGcTIXTKM6u8rMUErSi3dg=

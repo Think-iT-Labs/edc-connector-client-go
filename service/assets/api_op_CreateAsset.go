@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/Think-iT-Labs/edc-connector-client/go/internal"
-	"github.com/Think-iT-Labs/edc-connector-client/go/internal/sharedtypes"
+	"github.com/Think-iT-Labs/edc-connector-client-go/internal"
+	"github.com/Think-iT-Labs/edc-connector-client-go/internal/sharedtypes"
 )
 
 type CreateAssetRequestPayload struct {

@@ -8,8 +8,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/Think-iT-Labs/edc-connector-client/go/edc"
-	edchttp "github.com/Think-iT-Labs/edc-connector-client/go/edc/transport/http"
+	"github.com/Think-iT-Labs/edc-connector-client-go/edc"
+	edchttp "github.com/Think-iT-Labs/edc-connector-client-go/edc/transport/http"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -6,9 +6,9 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	config "github.com/Think-iT-Labs/edc-connector-client/go/config"
-	"github.com/Think-iT-Labs/edc-connector-client/go/edc"
-	edchttp "github.com/Think-iT-Labs/edc-connector-client/go/edc/transport/http"
+	config "github.com/Think-iT-Labs/edc-connector-client-go/config"
+	"github.com/Think-iT-Labs/edc-connector-client-go/edc"
+	edchttp "github.com/Think-iT-Labs/edc-connector-client-go/edc/transport/http"
 	"github.com/stretchr/testify/assert"
 )
 

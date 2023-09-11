@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/Think-iT-Labs/edc-connector-client/go/internal"
+	"github.com/Think-iT-Labs/edc-connector-client-go/internal"
 	"github.com/stretchr/testify/assert"
 )
 
