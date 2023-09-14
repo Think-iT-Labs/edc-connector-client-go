@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"io"
 	"net/http"
+	"reflect"
 
 	"github.com/Think-iT-Labs/edc-connector-client-go/internal"
 )
@@ -30,7 +31,9 @@ func NewHTTPClient(bearerToken *string) (*HTTPClient, error) {
 func (c *HTTPClient) InvokeOperation(options internal.InvokeHTTPOperationOptions) error {
 	var req *http.Request
 	var err error
-	if options.RequestPayload != nil {
+	if options.RequestPayload == nil || reflect.ValueOf(options.RequestPayload).IsZero() {
+		req, err = http.NewRequest(options.Method, options.Endpoint, nil)
+	} else {
 		input, err := json.Marshal(options.RequestPayload)
 
 		if err != nil {
@@ -38,8 +41,6 @@ func (c *HTTPClient) InvokeOperation(options internal.InvokeHTTPOperationOptions
 		}
 
 		req, err = http.NewRequest(options.Method, options.Endpoint, bytes.NewBuffer(input))
-	} else {
-		req, err = http.NewRequest(options.Method, options.Endpoint, nil)
 	}
 
 	if err != nil {
