@@ -1,6 +1,6 @@
 package policies
 
-import "github.com/Think-iT-Labs/edc-connector-client/go/internal"
+import "github.com/Think-iT-Labs/edc-connector-client-go/internal"
 
 type PolicyType string
 

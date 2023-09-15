@@ -1,6 +1,6 @@
 package contractdefinition
 
-import "github.com/Think-iT-Labs/edc-connector-client/go/internal"
+import "github.com/Think-iT-Labs/edc-connector-client-go/internal"
 
 var sdkErrors = internal.NewErrorFactory("contract-definitions")
 

@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/Think-iT-Labs/edc-connector-client/go/common/apivalidator"
-	"github.com/Think-iT-Labs/edc-connector-client/go/internal"
+	"github.com/Think-iT-Labs/edc-connector-client-go/common/apivalidator"
+	"github.com/Think-iT-Labs/edc-connector-client-go/internal"
 )
 
 type ListPoliciesInput struct {

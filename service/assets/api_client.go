@@ -1,9 +1,9 @@
 package assets
 
 import (
-	"github.com/Think-iT-Labs/edc-connector-client/go/edc"
-	edchttp "github.com/Think-iT-Labs/edc-connector-client/go/edc/transport/http"
-	"github.com/Think-iT-Labs/edc-connector-client/go/internal"
+	"github.com/Think-iT-Labs/edc-connector-client-go/edc"
+	edchttp "github.com/Think-iT-Labs/edc-connector-client-go/edc/transport/http"
+	"github.com/Think-iT-Labs/edc-connector-client-go/internal"
 )
 
 var sdkErrors = internal.NewErrorFactory("assets")

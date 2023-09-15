@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/Think-iT-Labs/edc-connector-client/go/internal"
+	"github.com/Think-iT-Labs/edc-connector-client-go/internal"
 )
 
 func (c *Client) CreateContractDefinition(cd ContractDefinition) (*CreateContractDefinitionOutput, error) {

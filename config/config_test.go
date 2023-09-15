@@ -6,7 +6,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/Think-iT-Labs/edc-connector-client/go/edc"
+	"github.com/Think-iT-Labs/edc-connector-client-go/edc"
 )
 
 func TestLoadConfig(t *testing.T) {

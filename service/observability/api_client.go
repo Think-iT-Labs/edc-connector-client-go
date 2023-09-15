@@ -6,9 +6,9 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	edchttp "github.com/Think-iT-Labs/edc-connector-client/go/edc/transport/http"
+	edchttp "github.com/Think-iT-Labs/edc-connector-client-go/edc/transport/http"
 
-	"github.com/Think-iT-Labs/edc-connector-client/go/edc"
+	"github.com/Think-iT-Labs/edc-connector-client-go/edc"
 )
 
 type Addresses struct {

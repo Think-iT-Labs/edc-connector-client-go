@@ -1,6 +1,6 @@
 package apivalidator
 
-import "github.com/Think-iT-Labs/edc-connector-client/go/internal"
+import "github.com/Think-iT-Labs/edc-connector-client-go/internal"
 
 type SortOrder string
 

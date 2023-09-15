@@ -3,10 +3,10 @@ package main
 import (
 	"fmt"
 
-	"github.com/Think-iT-Labs/edc-connector-client/go/common/apivalidator"
-	"github.com/Think-iT-Labs/edc-connector-client/go/config"
-	"github.com/Think-iT-Labs/edc-connector-client/go/edc"
-	"github.com/Think-iT-Labs/edc-connector-client/go/service/assets"
+	"github.com/Think-iT-Labs/edc-connector-client-go/common/apivalidator"
+	"github.com/Think-iT-Labs/edc-connector-client-go/config"
+	"github.com/Think-iT-Labs/edc-connector-client-go/edc"
+	"github.com/Think-iT-Labs/edc-connector-client-go/service/assets"
 )
 
 func main() {
@@ -176,12 +176,12 @@ func main() {
 				Operator:     "=",
 			},
 		},
-	}	
-	
+	}
+
 	filteredAssets, err := client.ListAssets(filter)
-	
+
 	if err != nil {
-		fmt.Printf("error while listing assets with filter %v: \n%v", filter, err )
+		fmt.Printf("error while listing assets with filter %v: \n%v", filter, err)
 		return
 	}
 	fmt.Println(filteredAssets)

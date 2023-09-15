@@ -8,5 +8,4 @@ use (
 	./service/assets
 	./service/contractdefinition
 	./service/policies
-	./examples/assetsCrud
 )

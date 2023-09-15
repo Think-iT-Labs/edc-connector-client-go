@@ -3,10 +3,10 @@ package main
 import (
 	"fmt"
 
-	"github.com/Think-iT-Labs/edc-connector-client/go/common/apivalidator"
-	"github.com/Think-iT-Labs/edc-connector-client/go/config"
-	"github.com/Think-iT-Labs/edc-connector-client/go/edc"
-	"github.com/Think-iT-Labs/edc-connector-client/go/service/policies"
+	"github.com/Think-iT-Labs/edc-connector-client-go/common/apivalidator"
+	"github.com/Think-iT-Labs/edc-connector-client-go/config"
+	"github.com/Think-iT-Labs/edc-connector-client-go/edc"
+	"github.com/Think-iT-Labs/edc-connector-client-go/service/policies"
 )
 
 func main() {
