@@ -4,8 +4,8 @@ use (
 	.
 	./config
 	./edc
-	./service/observability
 	./service/assets
 	./service/contractdefinition
+	./service/observability
 	./service/policies
 )

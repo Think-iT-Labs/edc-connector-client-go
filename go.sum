@@ -1,3 +1,13 @@
+github.com/Think-iT-Labs/edc-connector-client-go/config v0.0.0-20230915133108-4d1bed339660 h1:4bxnSyVbEmiBfVuEJsEGY9EAS3uXzfPBEwsPSl6f3cY=
+github.com/Think-iT-Labs/edc-connector-client-go/config v0.0.0-20230915133108-4d1bed339660/go.mod h1:c2wzw0nHR+O6DGxAjjveADSEp7quypl7iWUe2fAPG9w=
+github.com/Think-iT-Labs/edc-connector-client-go/edc v0.0.0-20230915133108-4d1bed339660 h1:pikPvEAiAqx3RqLMQOBHs4F/ld5zLC/jBvDC+E6OXxU=
+github.com/Think-iT-Labs/edc-connector-client-go/edc v0.0.0-20230915133108-4d1bed339660/go.mod h1:a3GzMmkP1SDlmJEOoep53ODJpe5Gl8O1RsxusxkAQ8Q=
+github.com/Think-iT-Labs/edc-connector-client-go/service/assets v0.0.0-20230915133108-4d1bed339660 h1:+F6ZjSK/niBmwMkdmJoGLHO6ayusXJXqtdihh4c2hEg=
+github.com/Think-iT-Labs/edc-connector-client-go/service/assets v0.0.0-20230915133108-4d1bed339660/go.mod h1:tO31D/7GOLmXkffJAiAuiRrzLWFw4hvfUe6IFY4ZOHg=
+github.com/Think-iT-Labs/edc-connector-client-go/service/contractdefinition v0.0.0-20230915133108-4d1bed339660 h1:p+g9pjjGGADdu76OJj/2RXHQaW1rNxgN3bYMIZuqFcw=
+github.com/Think-iT-Labs/edc-connector-client-go/service/contractdefinition v0.0.0-20230915133108-4d1bed339660/go.mod h1:hvgW1uYNHUYmPCNNjkYhs3dkElzB9DHZpxhVPqO0fuA=
+github.com/Think-iT-Labs/edc-connector-client-go/service/policies v0.0.0-20230915133108-4d1bed339660 h1:K6xEYKr/GLooDsM/hRrcJiuAj/9yLow/k9vdiz0gz/s=
+github.com/Think-iT-Labs/edc-connector-client-go/service/policies v0.0.0-20230915133108-4d1bed339660/go.mod h1:lgdCEMOQw+b/tik1x6D0vKvGnfy3FJLlwnEU+g5BvB4=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
