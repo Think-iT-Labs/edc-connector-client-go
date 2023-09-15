@@ -15,6 +15,12 @@ type CreateAssetRequestPayload struct {
 }
 
 func (c *Client) CreateAsset(asset AssetProperties, dataAddress DataAddress) (*sharedtypes.BaseResponse, error) {
+	// AssetProperties.Id is offered to the SDK user for convenience.
+	// The proper way to set a custom ID for an asset is through the
+	// "edc:id" asset property
+	if asset.Id != "" {
+		asset.PublicProperties["edc:id"] = asset.Id
+	}
 
 	requestpayload := CreateAssetRequestPayload{
 		BaseRequest: sharedtypes.BaseRequest{
@@ -33,7 +39,7 @@ func (c *Client) CreateAsset(asset AssetProperties, dataAddress DataAddress) (*s
 		Method:             http.MethodPost,
 		Endpoint:           endpoint,
 		RequestPayload:     requestpayload,
-		ResponsePayload:    createAssetResponse,
+		ResponsePayload:    &createAssetResponse,
 		ExpectedStatusCode: http.StatusOK,
 	})
 

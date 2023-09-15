@@ -7,7 +7,13 @@ import (
 	"net/http"
 
 	"github.com/Think-iT-Labs/edc-connector-client-go/internal"
+	"github.com/Think-iT-Labs/edc-connector-client-go/internal/sharedtypes"
 )
+
+type GetAssetPropertiesApiResponse struct {
+	AssetProperties
+	sharedtypes.BaseResponse
+}
 
 func (c *Client) GetAssetProperties(assetId string) (*AssetProperties, error) {
 	endpoint := fmt.Sprintf("%s/assets/%s", *c.Addresses.Management, assetId)
@@ -32,11 +38,15 @@ func (c *Client) GetAssetProperties(assetId string) (*AssetProperties, error) {
 		return nil, sdkErrors.FromError(internal.ParseConnectorApiError(response)).Error(internal.ERROR_API_ERROR)
 	}
 
-	asset := AssetProperties{}
-	err = json.Unmarshal(response, &asset)
+	apiResponse := GetAssetPropertiesApiResponse{}
+	err = json.Unmarshal(response, &apiResponse)
 	if err != nil {
 		return nil, sdkErrors.FromError(err).FailedTof(internal.ACTION_JSON_UNMARSHAL, response)
 	}
+	asset := AssetProperties{}
+	asset.Id = apiResponse.BaseResponse.Id
+	asset.PublicProperties = apiResponse.PublicProperties
+	asset.PrivateProperties = apiResponse.PrivateProperties
 
 	return &asset, err
 }

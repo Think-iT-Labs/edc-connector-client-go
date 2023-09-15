@@ -27,7 +27,8 @@ func Test_CreateAsset(t *testing.T) {
 	"asset": {
 		"edc:properties": {
 			"name": "product description",
-			"contentType": "application/json"
+			"contentType": "application/json",
+			"edc:id": "1234"
 		},
 		"edc:privateProperties": {
 			"private_name": "private private"
@@ -99,7 +100,8 @@ func Test_CreateAssetWithCustomDataAddress(t *testing.T) {
 	"asset": {
 		"edc:properties": {
 			"edc:name": "product description",
-			"edc:contentType": "application/json"
+			"edc:contentType": "application/json",
+			"edc:id": "1234"
 		}
 	},
 	"dataAddress": {

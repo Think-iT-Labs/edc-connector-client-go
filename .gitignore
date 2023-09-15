@@ -1,0 +1,7 @@
+.idea/
+connector/.gradle
+connector/build
+coverage/
+*.out
+*/**/.DS_STORE
+*.DS_STORE

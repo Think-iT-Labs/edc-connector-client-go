@@ -103,7 +103,7 @@ func main() {
 		return
 	}
 
-	if assetProperties.PublicProperties["name"] != "updated name" || assetProperties.PrivateProperties["secret"] != "updated private prop" {
+	if assetProperties.PublicProperties["edc:name"] != "updated name" || assetProperties.PrivateProperties["edc:secret"] != "updated private prop" {
 		fmt.Printf("asset update failed %v\n", asset)
 		return
 	}
@@ -112,7 +112,6 @@ func main() {
 	customData := assets.CustomData{
 		"name":    "Custom Test asset",
 		"baseUrl": "https://jsonplaceholder.typicode.com/users",
-		"type":    "HttpData",
 	}
 	secondAssetId := "customAsset"
 	secondAssetName := "customAssetName"
@@ -141,7 +140,7 @@ func main() {
 		return
 	}
 	if asset.Id != secondAssetId {
-		fmt.Printf("Asset ID is not correct, expected %v", secondAssetId)
+		fmt.Printf("Asset ID is not correct, expected %s. actual: %s", secondAssetId, asset.Id)
 		return
 	}
 
@@ -152,8 +151,8 @@ func main() {
 		return
 	}
 
-	if assetDA.(assets.HttpData).Type != "HttpData" {
-		fmt.Printf("error unexpected data address for id \"%s\". expected:\n %v \n got: \n %v\n", secondAssetId, "HttpData", assetDA)
+	if assetDA.(assets.CustomData)["edc:name"] != customData["name"] {
+		fmt.Printf("error unexpected data address for id \"%s\". expected:\n %v \n got: \n %v\n", secondAssetId, customData["name"], assetDA.(assets.CustomData)["name"])
 		return
 	}
 
@@ -165,7 +164,7 @@ func main() {
 
 	allAssets, err = client.ListAssets()
 	if err != nil {
-		fmt.Printf("error while listing assets: \n%v\n", err)
+		fmt.Printf("error while listing assets: \n%+v\n", err)
 		return
 	}
 	fmt.Println(allAssets)
@@ -184,8 +183,8 @@ func main() {
 	filteredAssets, err := client.ListAssets(filter)
 
 	if err != nil {
-		fmt.Printf("error while listing assets with filter %v: \n%v\n", filter, err)
+		fmt.Printf("error while listing assets with filter %+v: \n%+v\n", filter, err)
 		return
 	}
-	fmt.Println(filteredAssets)
+	fmt.Printf("filtered assets: %+v\n", filteredAssets)
 }
